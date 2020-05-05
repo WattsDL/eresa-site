@@ -1,37 +1,73 @@
-------MultipartBoundary--0Wn2szErgAqHnW2rrXOQBLgRqhud6ta9YSSrcar0GN----
-Content-Type: text/html
-Content-ID: <frame-80289A62730315FA31170805E294192D@mhtml.blink>
-Content-Transfer-Encoding: quoted-printable
-Content-Location: https://lcc-adm.github.io/web-demo/boxes.html
 
-<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
-ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
-css" href=3D"cid:css-6b5028ff-6fe2-4449-9b24-c30f25e84f31@mhtml.blink" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <title>boxes demo page</title>
 
- =20
+  <style>
+    /* the following is the box-sizing reset */
+
+    /* 
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    */
+
+    /* now back to regular styling */
+    body {
+      color: #14080E;
+      background-color: #E8E5E7;
+    }
+
+    header {}
+
+    main {}
+
+    #one {
+      background-color: #E9EB9E;
+    }
+
+    #two {
+      background-color: #ACC196;
+    }
+
+    #three {
+      background-color: #799496;
+    }
+
+    #four {
+      background-color: #49475B;
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Donovan's work in progress</h1>
+    <h1>web demo for exploring the box model in web pages</h1>
   </header>
 
   <main>
     <!-- a box is called a div in html -->
 
-    <div id=3D"one">
-      <p><p style="font-size:200%;"</p>this is the first box o.o</p>
+    <div id="one">
+      <p>content goes here.</p>
     </div>
 
-    <div id=3D"two">
-      <p></p>
+    <div id="two">
+      <p>content goes here.</p>
     </div>
 
     <!-- this div has another div inside it -->
-    <div id=3D"three">
-      <div id=3D"four">
+    <div id="three">
+      <div id="four">
         <p>content goes here.</p>
       </div>
       <p>content goes here.</p>
@@ -39,48 +75,6 @@ css" href=3D"cid:css-6b5028ff-6fe2-4449-9b24-c30f25e84f31@mhtml.blink" />
 
   </main>
 
+</body>
 
-
-</body></html>
-------MultipartBoundary--0Wn2szErgAqHnW2rrXOQBLgRqhud6ta9YSSrcar0GN----
-Content-Type: text/css
-Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-6b5028ff-6fe2-4449-9b24-c30f25e84f31@mhtml.blink
-
-@charset "utf-8";
-
-body { color: rgb(20, 8, 14); background-color: rgb(232, 229, 231); }
-
-header { }
-
-main { }
-
-#one { background-color: rgb(233, 235, 158);
-        width: 700px;
-        padding: 100px;
-        border: 4px solid #000;
-        text-align: left;
-        height: 100px; 
-        margin-bottom: 20px;}
-
-#two { background-color: rgb(102, 102, 255);
-       border-radius: 30px;
-       height: 150px;
-       padding: 10px;
-       border: 4px solid #000;
-       text-align: center;
-       margin: 20px;}
-
-#three { background-color: rgb(51, 51, 255);
-         border-radius: 30px;
-         margin: 20px;
-         text-align: center;
-         padding: 30px;
-         border: 3px solid #000;}
-
-#four { background-color: rgb(77, 77, 255);
-        text-align: center
-        padding: 40px;
-        border: 3px solid gray}
-
-------MultipartBoundary--0Wn2szErgAqHnW2rrXOQBLgRqhud6ta9YSSrcar0GN------
+</html>
